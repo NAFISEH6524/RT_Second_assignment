@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="freq" value= "10" />
+
+    <include file="$(find assignment_2_2022)/launch/assignment1.launch" />
+
+    <node pkg="npackage" type="first.py" name="first" launch-prefix="gnome-terminal --command" />
+    <node pkg="npackage" type="second.py" name="second" launch-prefix="gnome-terminal --command" />
+    <node pkg="npackage" type="third.py" name="third" launch-prefix="gnome-terminal --command" />
+    <node pkg="npackage" type="fourth.py" name="fourth" launch-prefix="gnome-terminal --command" />    
+</launch>
